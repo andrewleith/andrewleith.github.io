@@ -8,38 +8,117 @@
     <title>Portfolio - Andrew Leith</title>
     <!-- Bulma Version 0.9.0-->
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://bulma.io/vendor/fontawesome-free-5.15.2-web/css/all.min.css">
+    <link href="lg/css/lightgallery.css" rel="stylesheet" />
+    <style>
+        #html5-videos li {
+            display: inline-block;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
-    <br /><br /><br />
-    <div class="container">
-        <div class="tile is-ancestor">
-            <div class="tile is-4 is-vertical is-parent">
-                <div class="tile is-child box">
-                    <p class="title">One</p>
-                    <video controls width="100%">
-                        <source src="https://github.com/andrewleith/andrewleith.github.io/raw/main/RidingsMobile.mp4" type="video/mp4" />
-                        Sorry, your browser doesn't support embedded videos.
-                    </video>
-                </div>
-                <div class="tile is-child box">
-                    <p class="title">Two</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-                </div>
-            </div>
-            <div class="tile is-parent">
-                <div class="tile is-child box">
-                    <p class="title">Three</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Morbi maximus, leo sit amet vehicula eleifend,
-                        nunc dui porta orci, quis semper odio felis ut quam.</p>
-                    <p>Suspendisse varius ligula in molestie lacinia. Maecenas varius eget ligula a sagittis. Pellentesque interdum, nisl nec interdum maximus, augue diam porttitor lorem, et sollicitudin felis neque sit amet erat. Maecenas imperdiet felis
-                        nisi, fringilla luctus felis hendrerit sit amet. Aenean vitae gravida diam, finibus dignissim turpis. Sed eget varius ligula, at volutpat tortor.</p>
-                    <p>Integer sollicitudin, tortor a mattis commodo, velit urna rhoncus erat, vitae congue lectus dolor consequat libero. Donec leo ligula, maximus et pellentesque sed, gravida a metus. Cras ullamcorper a nunc ac porta. Aliquam ut aliquet
-                        lacus, quis faucibus libero. Quisque non semper leo.</p>
+    <div class="container mt-5">
+        <div class="has-text-centered mb-3">
+            <div class="tag is-primary has-text-centered is-large">
+                <div class="icon-text">
+                    <span class="icon is-white">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </span>
+                    <span>Recent projects</span>
                 </div>
             </div>
         </div>
+        <div class="tile is-vertical is-ancestor">
+            <div class="tile is-parent">
+                <div class="tile is-child notification is-dark">
+
+                    <p class="title">PSPC Directory</p>
+                    <p class="subtitle is-6">This app centralizes employee information and reporting structure across Teams, Outlook and any other app in the department.</p>
+                    <div class="has-text-centered">
+                        <div id="lightgallery">
+                            <a href="images/PSPCDirectoryEmployeeDetails.png">
+                                <img src="images/PSPCDirectoryEmployeeDetails_tn.jpg" alt="Employee details" />
+                            </a>
+                            <a href="images/PSPCDirectoryUpdateYourInfo.png">
+                                <img src="images/PSPCDirectoryUpdateYourInfo_tn.jpg" alt="Update your information" />
+                            </a>
+                            <a href="images/PSPCDirectoryViewOrganization.png">
+                                <img src="images/PSPCDirectoryViewOrganization_tn.jpg" alt="View organization" />
+                            </a>
+                            <a href="images/PSPCDirectoryBranchDetails.png">
+                                <img src="images/PSPCDirectoryBranchDetails_tn.jpg" alt="View branch details" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tile">
+                <div class="tile is-7 is-parent">
+                    <div class="tile is-child notification is-warning is-child">
+
+                        <p class="title">Ridings app prototype</p>
+                        <p class="subtitle is-6">This apps would allow a user to compare some statistics between various ridings across canada.</p>
+                        <div class="has-text-centered">
+                            <!-- Hidden video div -->
+                            <div style="display:none;" id="video1">
+                                <video class="lg-video-object lg-html5" controls preload="none">
+                            <source src="videos/RidingsMobile.mp4" type="video/mp4">
+                            Your browser does not support HTML5 video.
+                        </video>
+                            </div>
+                            <div style="display:none;" id="video2">
+                                <video class="lg-video-object lg-html5" controls preload="none">
+                            <source src="videos/RidingsDesktop.mp4" type="video/mp4">
+                            Your browser does not support HTML5 video.
+                        </video>
+                            </div>
+
+                            <!-- data-src should not be provided when you use html5 videos -->
+                            <ul id="html5-videos">
+                                <li data-poster="video-poster1.jpg" data-html="#video1">
+                                    <img src="images/RidingsAppMobile_tn.jpg" alt="Ridings app mobile" />
+                                </li>
+                                <li data-poster="video-poster2.jpg" data-html="#video2">
+                                    <img src="images/RidingsAppDesktop_tn.jpg" alt="Ridings app desktop" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tile is-5 is-parent">
+                    <div class="tile is-child notification is-info">
+                        <p class="title">StatCannabis</p>
+                        <p class="subtitle is-6">This apps enables crowdsourcing of cannabis prices across the country.</p>
+                        <div class="has-text-centered">
+                            <div id="lightgallery2">
+                                <a href="images/StatCannabisDesktop.png">
+                                    <img src="images/StatCannabisDesktop_tn.jpg" />
+                                </a>
+                                <a href="images/StatCannabisMobile.png">
+                                    <img src="images/StatCannabisMobile_tn.jpg" />
+                                </a>
+                            </div>
+
+                            <a href="https://surveys-enquetes.statcan.gc.ca/cannabis/" class="button is-dark mt-3">Visit site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="lg/js/lightgallery.min.js"></script>
+
+
+    <script type="text/javascript">
+        $("#lightgallery, #lightgallery2, #lightgallery3, #html5-videos").lightGallery({
+            thumbnail: true
+        });
+    </script>
 </body>
 
 </html>
