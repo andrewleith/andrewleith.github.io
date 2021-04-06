@@ -47,127 +47,129 @@
         <div class="has-text-centered mb-3">
             <div class="tag is-primary has-text-centered is-large">
                 <h1 class="icon-text">
-                    <span class="icon is-white">
+                    <span class="icon has-text-dark">
                         <i class="fas fa-tachometer-alt"></i>
                     </span>
-                    <span>Recent projects</span>
+                    <span class="has-text-dark">Recent projects</span>
                 </h1>
             </div>
         </div>
-        <div class="tile is-vertical is-ancestor has-text-centered">
-            <div class="tile is-parent">
-                <div class="tile is-child notification is-dark py-6">
-                    <h2 class="title">PSPC Directory</h2>
-                    <p class="subtitle is-6">This app centralizes employee information and reporting structure across Teams, Outlook and any other app in the department.</p>
-                    <div class="has-text-centered mt-6">
-                        <div id="lightgallery">
-                            <a href="images/PSPCDirectoryEmployeeDetails.png">
-                                <img src="images/PSPCDirectoryEmployeeDetails_tn.jpg" alt="Employee details" />
-                            </a>
-                            <a href="images/PSPCDirectoryUpdateYourInfo.png">
-                                <img src="images/PSPCDirectoryUpdateYourInfo_tn.jpg" alt="Update your information" />
-                            </a>
-                            <a href="images/PSPCDirectoryViewOrganization.png">
-                                <img src="images/PSPCDirectoryViewOrganization_tn.jpg" alt="View organization" />
-                            </a>
-                            <a href="images/PSPCDirectoryBranchDetails.png">
-                                <img src="images/PSPCDirectoryBranchDetails_tn.jpg" alt="View branch details" />
-                            </a>
-                        </div>
-                        <div class="block mt-5 has-text-centered">
-                            <span class="tag has-background-primary-light is-medium">
+        <main>
+            <div class="tile is-vertical is-ancestor has-text-centered">
+                <div class="tile is-parent">
+                    <div class="tile is-child notification is-dark py-6">
+                        <h2 class="title">PSPC Directory</h2>
+                        <p class="subtitle is-6">This app centralizes employee information and reporting structure across Teams, Outlook and any other app in the department.</p>
+                        <div class="has-text-centered mt-6">
+                            <div id="lightgallery">
+                                <a href="images/PSPCDirectoryEmployeeDetails.png">
+                                    <img src="images/PSPCDirectoryEmployeeDetails_tn.jpg" alt="Employee details" />
+                                </a>
+                                <a href="images/PSPCDirectoryUpdateYourInfo.png">
+                                    <img src="images/PSPCDirectoryUpdateYourInfo_tn.jpg" alt="Update your information" />
+                                </a>
+                                <a href="images/PSPCDirectoryViewOrganization.png">
+                                    <img src="images/PSPCDirectoryViewOrganization_tn.jpg" alt="View organization" />
+                                </a>
+                                <a href="images/PSPCDirectoryBranchDetails.png">
+                                    <img src="images/PSPCDirectoryBranchDetails_tn.jpg" alt="View branch details" />
+                                </a>
+                            </div>
+                            <div class="block mt-5 has-text-centered">
+                                <span class="tag has-background-primary-light is-medium">
                                 .NET Core
                             </span>
-                            <span class="tag has-background-primary-light is-medium">
+                                <span class="tag has-background-primary-light is-medium">
                                 Entity Framework
                             </span>
-                            <span class="tag has-background-primary-light is-medium">
+                                <span class="tag has-background-primary-light is-medium">
                                 Fomantic UI
                             </span>
-                            <span class="tag has-background-primary-light is-medium">
+                                <span class="tag has-background-primary-light is-medium">
                                 Cypress.io
                             </span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="tile">
-                <div class="tile is-6 is-parent">
-                    <div class="tile is-child notification is-warning is-child py-6">
-                        <h2 class="title">Ridings app prototype</h2>
-                        <p class="subtitle is-6">This app would allow a user to compare some statistics between various ridings across canada.</p>
-                        <div class="has-text-centered mt-6">
-                            <!-- Hidden video div -->
-                            <div style="display:none;" id="video1">
-                                <video class="lg-video-object lg-html5" controls preload="none">
+                <div class="tile">
+                    <div class="tile is-6 is-parent">
+                        <div class="tile is-child notification is-warning is-child py-6">
+                            <h2 class="title">Ridings app prototype</h2>
+                            <p class="subtitle is-6">This app would allow a user to compare some statistics between various ridings across canada.</p>
+                            <div class="has-text-centered mt-6">
+                                <!-- Hidden video div -->
+                                <div style="display:none;" id="video1">
+                                    <video class="lg-video-object lg-html5" controls preload="none">
                                     <source src="videos/RidingsMobile.mp4" type="video/mp4">
                                     Your browser does not support HTML5 video.
                                 </video>
-                            </div>
-                            <div style="display:none;" id="video2">
-                                <video class="lg-video-object lg-html5" controls preload="none">
+                                </div>
+                                <div style="display:none;" id="video2">
+                                    <video class="lg-video-object lg-html5" controls preload="none">
                                     <source src="videos/RidingsDesktop.mp4" type="video/mp4">
                                     Your browser does not support HTML5 video.
                                 </video>
-                            </div>
+                                </div>
 
-                            <!-- data-src should not be provided when you use html5 videos -->
-                            <ul id="html5-videos">
-                                <li data-poster="video-poster1.jpg" data-html="#video1">
-                                    <img src="images/RidingsAppMobile_tn.jpg" alt="Mobile" />
-                                </li>
-                                <li data-poster="video-poster2.jpg" data-html="#video2">
-                                    <img src="images/RidingsAppDesktop_tn.jpg" alt="Desktop" />
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="block mt-5 has-text-centered">
-                            <span class="tag has-background-primary-light is-medium">
+                                <!-- data-src should not be provided when you use html5 videos -->
+                                <ul id="html5-videos">
+                                    <li data-poster="video-poster1.jpg" data-html="#video1">
+                                        <img src="images/RidingsAppMobile_tn.jpg" alt="Mobile" />
+                                    </li>
+                                    <li data-poster="video-poster2.jpg" data-html="#video2">
+                                        <img src="images/RidingsAppDesktop_tn.jpg" alt="Desktop" />
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="block mt-5 has-text-centered">
+                                <span class="tag has-background-primary-light is-medium">
                                 React
                             </span>
-                            <span class="tag has-background-primary-light is-medium">
+                                <span class="tag has-background-primary-light is-medium">
                                 React Pose
                             </span>
-                            <span class="tag has-background-primary-light is-medium">
+                                <span class="tag has-background-primary-light is-medium">
                                 Material UI
                             </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="tile is-6 is-parent">
-                    <div class="tile is-child notification is-info py-6">
-                        <h2 class="title">StatCannabis</h2>
-                        <p class="subtitle is-6">This app enables crowdsourcing of cannabis prices across the country.</p>
-                        <div class="has-text-centered mt-6">
-                            <div id="lightgallery2">
-                                <a href="images/StatCannabisMobile.png">
-                                    <img src="images/StatCannabisMobile_tn.jpg" alt="Mobile" />
-                                </a>
-                                <a href="images/StatCannabisDesktop.png">
-                                    <img src="images/StatCannabisDesktop_tn.jpg" alt="Desktop" />
-                                </a>
                             </div>
                         </div>
-                        <div class="block mt-5 has-text-centered">
-                            <span class="tag has-background-primary-light is-medium">
+                    </div>
+                    <div class="tile is-6 is-parent">
+                        <div class="tile is-child notification is-info py-6">
+                            <h2 class="title">StatCannabis</h2>
+                            <p class="subtitle is-6 has-text-black-ter">This app enables crowdsourcing of cannabis prices across the country.</p>
+                            <div class="has-text-centered mt-6">
+                                <div id="lightgallery2">
+                                    <a href="images/StatCannabisMobile.png">
+                                        <img src="images/StatCannabisMobile_tn.jpg" alt="Mobile" />
+                                    </a>
+                                    <a href="images/StatCannabisDesktop.png">
+                                        <img src="images/StatCannabisDesktop_tn.jpg" alt="Desktop" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="block mt-5 has-text-centered">
+                                <span class="tag has-background-primary-light is-medium">
                                 .NET
                             </span>
-                            <span class="tag has-background-primary-light is-medium">
+                                <span class="tag has-background-primary-light is-medium">
                                 React
                             </span>
-                            <span class="tag has-background-primary-light is-medium">
+                                <span class="tag has-background-primary-light is-medium">
                                 React Rebound
                             </span>
-                            <span class="tag has-background-primary-light is-medium">
+                                <span class="tag has-background-primary-light is-medium">
                                 Cypress.io
                             </span>
+                            </div>
+                            <a href="https://surveys-enquetes.statcan.gc.ca/cannabis/" class="button is-dark mt-3">Visit site</a>
                         </div>
-                        <a href="https://surveys-enquetes.statcan.gc.ca/cannabis/" class="button is-dark mt-3">Visit site</a>
                     </div>
                 </div>
-            </div>
 
-        </div>
+            </div>
+        </main>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
