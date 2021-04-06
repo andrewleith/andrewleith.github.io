@@ -74,11 +74,25 @@
                                 <img src="images/PSPCDirectoryBranchDetails_tn.jpg" alt="View branch details" />
                             </a>
                         </div>
+                        <div class="block mt-5 has-text-centered">
+                            <span class="tag has-background-primary-light is-medium">
+                                .NET Core
+                            </span>
+                            <span class="tag has-background-primary-light is-medium">
+                                Entity Framework
+                            </span>
+                            <span class="tag has-background-primary-light is-medium">
+                                Fomantic UI
+                            </span>
+                            <span class="tag has-background-primary-light is-medium">
+                                Cypress.io
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="tile">
-                <div class="tile is-7 is-parent">
+                <div class="tile is-6 is-parent">
                     <div class="tile is-child notification is-warning is-child py-6">
                         <h2 class="title">Ridings app prototype</h2>
                         <p class="subtitle is-6">This app would allow a user to compare some statistics between various ridings across canada.</p>
@@ -107,9 +121,20 @@
                                 </li>
                             </ul>
                         </div>
+                        <div class="block mt-5 has-text-centered">
+                            <span class="tag has-background-primary-light is-medium">
+                                React
+                            </span>
+                            <span class="tag has-background-primary-light is-medium">
+                                React Pose
+                            </span>
+                            <span class="tag has-background-primary-light is-medium">
+                                Material UI
+                            </span>
+                        </div>
                     </div>
                 </div>
-                <div class="tile is-5 is-parent">
+                <div class="tile is-6 is-parent">
                     <div class="tile is-child notification is-info py-6">
                         <h2 class="title">StatCannabis</h2>
                         <p class="subtitle is-6">This app enables crowdsourcing of cannabis prices across the country.</p>
@@ -122,8 +147,22 @@
                                     <img src="images/StatCannabisDesktop_tn.jpg" alt="Desktop" />
                                 </a>
                             </div>
-                            <a href="https://surveys-enquetes.statcan.gc.ca/cannabis/" class="button is-dark mt-3">Visit site</a>
                         </div>
+                        <div class="block mt-5 has-text-centered">
+                            <span class="tag has-background-primary-light is-medium">
+                                .NET
+                            </span>
+                            <span class="tag has-background-primary-light is-medium">
+                                React
+                            </span>
+                            <span class="tag has-background-primary-light is-medium">
+                                React Rebound
+                            </span>
+                            <span class="tag has-background-primary-light is-medium">
+                                Cypress.io
+                            </span>
+                        </div>
+                        <a href="https://surveys-enquetes.statcan.gc.ca/cannabis/" class="button is-dark mt-3">Visit site</a>
                     </div>
                 </div>
             </div>
@@ -143,9 +182,7 @@
         $('img').each(function() {
             var data = $(this).attr('alt');
             $(this)
-                .wrap("<div class='new is-size-6'></div>")
-                .parent('.new')
-                .attr('data-alt', data);
+                .wrap("<div class='new is-size-6'></div>").parent('.new').attr('data-alt', data);
         });
     </script>
 </body>
